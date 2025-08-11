@@ -1,0 +1,18 @@
+{
+  "name": "social-post-approval",
+  "version": "1.0.0",
+  "description": "Social post approval and caption generator app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.11",
+    "openai": "^4.0.0",
+    "sqlite3": "^5.1.6"
+  }
+}
