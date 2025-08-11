@@ -12,8 +12,11 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 // Setup OpenAI
-const configuration = new Configuration({ apiKey: process.env.OPENAI_API_KEY });
-const openai = new OpenAIApi(configuration);
+import OpenAI from "openai";
+
+const openai = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY
+});
 
 // DB setup
 const dbFile = './data.sqlite';
